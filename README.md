@@ -5,6 +5,6 @@ A Comparison of Playlist Generation Strategies for Music Recommendation and a Ne
 
 * Popularity-based approaches (POP)
 * Same artists - greatest hits (SAGH)
-* Collocated artists - greatest hits (CAGH)
+* Jaccard similarity based (noaudio) 
 
 Three baselines (audio is not required) are implemented.

@@ -49,7 +49,6 @@ org_list = df.index.tolist()
 df = df.rename(index=dict(zip(org_list,seed_list)))
 
 print(df.head())
-
 # for cagh, artist level playlist sim mat
 # co-occur hammming distance similarity matrix (songXsong)
 jac_sim = 1 - pairwise_distances(df.T, metric = "hamming")
@@ -65,7 +64,7 @@ store.close()
 # read track_sub, find matching artist - artist-track dictionary - set used artist's tracks to 1 similarity score followed by popularity ranking
 artist_to_track = {}
 track_to_artist = {}
-with open('track_sub.csv', mode='r') as infile:
+with open('track_subsub.csv', mode='r') as infile:
     reader = csv.DictReader(infile)
     for row in reader:
         data = dict(row)
